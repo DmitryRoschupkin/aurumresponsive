@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AurumRecords</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-dark text-white">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black sticky-top border-bottom border-secondary">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-warning" href="#">AurumRecords</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="#releases" class="nav-link">Releases</a></li>
+                    <li class="nav-item"><a href="#artist" class="nav-link">Featured Artist</a></li>
+                    <li class="nav-item"><a href="#faq" class="nav-link">FAQ</a></li>
+                </ul>
+                <button class="btn btn-outline-warning ms-lg-3" data-bs-toggle="modal" data-bs-target="#demoModal">Submit Demo</button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="py-5 text-center bg-gradient">
+        <div class="container py-4">
+            <h1 class="display-3 fw-bold">Народное музыкальное издательство</h1>
+            <p class="lead text-secondary">Независимая музыкальная дистрибьюция и менеджемент!</p>
+            <button class="btn btn-warning btn-lg me-2" data-bs-toggle="modal" data-bs-target="#demoModal">Начать покорять айсберг саундклауда!</button>
+            <a href="#releases" class="btn btn-outline-light btn-lg">Послушать наших артистов</a>
+        </div>
+    </header>
+
+    <section id="services" class="services-section">
+        <div class="services-container">
+            <h2 class="service-title">Сервисы лэйбла</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Сведение и мастеринг</h3>
+                    <p>Аналоговые преампы и компрессоры и цифровые плагины для мировых стандартов стриминга</p>
+                </div>
+                <div class="service-card">
+                    <h3>Дистрибьюция</h3>
+                    <p>Можете дропнуть свои шедевры на Spotify, Apple Music, Soundcloud, Yandex Music
+                        и многие другие партнёрские сервисы, и вас услышит весь мир!</p>
+                </div>
+                <div class="service-card">
+                    <h3>Продвижение</h3>
+                    <p>В карточке про дистрибьюцию написано про то, что вас услышит весь мир - и это никак не приукрашено!</p>
+                </div>
+                <div class="service-card">
+                    <h3>Поддержка артистов</h3>
+                    <p>Контракты, роялти и концертные туры!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="releases" class="py-5 bg-black">
+        <div class="container">
+            <h2 class="text-center mb-4">Последние релизы</h2>
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card bg-dark text-white border-secondary h-100">
+                        <div class="card-body">
+                            <span class="badge bg-warning text-dark mb-2">Новый сингл</span>
+                            <h5 class="card-title">COW</h5>
+                            <p class="card-text text-secondary">FRIENDLY THUG 52 NGG</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card bg-dark text-white border-secondary h-100">
+                        <div class="card-body">
+                            <span class="badge bg-warning text-dark mb-2">EP</span>
+                            <h5 class="card-title">Голд</h5>
+                            <p class="card-text text-secondary">Буерак</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card bg-dark text-white border-secondary h-100">
+                        <div class="card-body">
+                            <span class="badge bg-warning text-dark mb-2">Альбом</span>
+                            <h5 class="card-title">Любимые песни (воображаемых) людей</h5>
+                            <p class="card-text text-secondary">Хаски</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="artist" class="py-5">
+        <div class="container">
+            <div class="row align-items-center g-4">
+                <div class="col-12 col-md-6 order-1 order-md-1">
+                    <h2>Артист месяца: my bloody valentine</h2>
+                    <p class="text-secondary">My Bloody Valentine — ирландско-английская альтернативная рок-группа,
+                        образованная в городе Дублин в 1983 году.</p>
+                    <div class="p-3 bg-dark rounded border border-warning d-none d-md-block">
+                        <strong>Студийное оборудование: </strong> Otari MTR-90
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 order-2 order-md-2">
+                    <div class="bg-secondary p-5 text-center rounded">
+                        <span>[ Artist Cover Image ]</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="py-5 bg-black">
+        <div class="container">
+            <h2 class="text-center mb-4">Часто задаваемые вопросы</h2>
+            <div class="accordion accordion-flush" id="faqAccordion">
+                <div class="accordion-item bg-dark text-white border-secondary">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed bg-dark text-white"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                            Как я могу закинуть демку?
+                        </button>
+                    </h2>
+                    <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body text-secondary">
+                            Нажмите "Опубликовать дэмо" на навигационной панели и заполните форму!
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal fade" id="demoModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content bg-dark text-white border-secondary">
+                <div class="modal-header border-secondary">
+                    <h5 class="modal-title">Опубликовать дэмо</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label">Имя артиста/проекта</label>
+                            <input type="text" class="form-control bg-black text-white border-secondary">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Ссылка на SoundCloud/Облако с вашей демкой</label>
+                            <input type="url" class="form-control bg-black text-white border-secondary">
+                        </div>
+                        <button type="submit" class="btn btn-warning w-100">Опозориться</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
