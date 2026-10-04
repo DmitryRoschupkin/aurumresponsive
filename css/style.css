@@ -1,0 +1,99 @@
+:root {
+    --bs-warning: cadetblue;
+    --bs-warning-rgb: 95, 158, 160;
+}
+
+.services-section {
+    padding: 2rem 1rem;
+}
+
+.services-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.service-title {
+    font-size: 1.75rem;
+    color: cadetblue;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.service-card {
+    background-color: #1a1a1a;
+    border: 1px solid #333333;
+    border-radius: 8px;
+    padding: 1.25rem;
+    transition: transform .3s ease, border-color .3s ease;
+}
+
+.service-card h3 {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: .5rem;
+}
+
+.service-card p {
+    color: #a0a0a0;
+    font-size: .9rem;
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+    .services-section {
+        padding: 3rem 2rem;
+    }
+
+    .services-title {
+        font-size: 2.2rem;
+        text-align: left;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .services-section {
+        padding: 4rem 2rem;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .service-card:hover {
+        transform: translateY(-8px);
+        border-color: cadetblue;
+    }
+}
+
+.btn-warning {
+    background-color: cadetblue;
+    border-color: cadetblue;
+    color: #ffffff;
+}
+
+.btn-warning:hover {
+    background-color: #4682b4;
+    border-color: #4682b4;
+}
+
+.btn-outline-warning {
+    color: cadetblue;
+    border-color: cadetblue;
+}
+
+.btn-outline-warning:hover {
+    background-color: cadetblue;
+    border-color: cadetblue;
+    color: #ffffff;
+}
